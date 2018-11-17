@@ -39,7 +39,14 @@ without compromising the data log.
 
 ## Hardware Units
 
-### SparkFun microSD shield SparkFun Arduino Pro
+This project uses a set of boards from Sparkfun Electronics:
+..* Arduino Pro
+..* microSD Shield
+..* HX711 Load Cell Amp
+..* SparkFun DeadOn RTC Breakout - DS3234
+..* One Wire Digital Temperature Sensor - DS18B20
+
+### SparkFun microSD Shield
 
 Pin assignments:
 
@@ -73,8 +80,6 @@ The HX711 board can be powered from 2.7V to 5V so the Arduino 5V power
 should be fine.
 
 ### DS3234 Real-Time Clock
-
-SparkFun DeadOn RTC Breakout - DS3234
 
 Pin assignments:
 
