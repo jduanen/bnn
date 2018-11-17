@@ -41,11 +41,11 @@ without compromising the data log.
 
 This project uses a set of boards from Sparkfun Electronics:
 
-..* Arduino Pro
-..* microSD Shield
-..* HX711 Load Cell Amp
-..* SparkFun DeadOn RTC Breakout - DS3234
-..* One Wire Digital Temperature Sensor - DS18B20
+* Arduino Pro
+* microSD Shield
+* HX711 Load Cell Amp
+* SparkFun DeadOn RTC Breakout - DS3234
+* One Wire Digital Temperature Sensor - DS18B20
 
 ### SparkFun microSD Shield
 
