@@ -40,6 +40,7 @@ without compromising the data log.
 ## Hardware Units
 
 This project uses a set of boards from Sparkfun Electronics:
+
 ..* Arduino Pro
 ..* microSD Shield
 ..* HX711 Load Cell Amp
