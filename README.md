@@ -42,6 +42,7 @@ without compromising the data log.
 ### SparkFun microSD shield SparkFun Arduino Pro
 
 Pin assignments:
+
 | Signal | Pin |
 | ------ |:---:|
 | MOSI   | 11  |
@@ -59,6 +60,7 @@ zero state.  Calibration factor will be significantly different but it will
 be linearly related to lbs (1 lbs = 0.453592 kg).
 
 Pin assignments:
+
 | Signal | Pin |
 | ------ |:---:|
 | CLK    | 2   |
@@ -75,6 +77,7 @@ should be fine.
 SparkFun DeadOn RTC Breakout - DS3234
 
 Pin assignments:
+
 | Signal | Pin | Library Default |  Notes   |
 | ------ |:---:|:---------------:|:-------- |
 | SS     | 10  | 10              |          |
@@ -91,6 +94,7 @@ Looking at flat side, leads down, from left to right: GND, Data, VCC
 Data needs to be be pulled up to VCC with 4.7K ohm resistor
 
 Pin assignments:
+
 | Signal | Pin | Library Default |
 | ------ |:---:|:---------------:|
 | GND    | GND |                 |
