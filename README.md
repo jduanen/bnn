@@ -23,8 +23,7 @@ the weight against the last recorded value.  When the difference between
 them exceeds a given amount, then a new log record is written and the last
 weight value is updated.
 
-Log records are of the form:
-  '''<timestamp>, <temperature>, <loadCell value>'''
+Log records are of the form: `<timestamp>, <temperature>, <loadCell value>`
 
 The timestamp is in ISO format.  The temperature is a float in degrees C.
 
@@ -40,7 +39,7 @@ without compromising the data log.
 
 ## Hardware Units
 
-###SparkFun microSD shield SparkFun Arduino Pro
+### SparkFun microSD shield SparkFun Arduino Pro
 
 Pin assignments:
 | Signal | Pin |
@@ -52,7 +51,7 @@ Pin assignments:
 
 This pin assignment is given by the PCB, so must work around it.
 
-###HX711 Load Cell Amp
+### HX711 Load Cell Amp
 
 Calibration factor can be very positive or very negative. It all depends on
 the setup of your scale system and the direction the sensors deflect from
@@ -71,7 +70,7 @@ Most any pin on the Arduino Uno will be compatible with DOUT/CLK.
 The HX711 board can be powered from 2.7V to 5V so the Arduino 5V power
 should be fine.
 
-###DS3234 Real-Time Clock
+### DS3234 Real-Time Clock
 
 SparkFun DeadOn RTC Breakout - DS3234
 
@@ -86,7 +85,7 @@ Pin assignments:
 | VCC    | 5V  |                 |          |
 | GND    | GND |                 |          |
 
-###One Wire Digital Temperature Sensor - DS18B20
+### One Wire Digital Temperature Sensor - DS18B20
 
 Looking at flat side, leads down, from left to right: GND, Data, VCC
 Data needs to be be pulled up to VCC with 4.7K ohm resistor
@@ -100,6 +99,7 @@ Pin assignments:
 
 
 ## I/O Pin Map:
+
 | Pin |  Signal | Direction |   Notes   |
 |:---:|:------- |:---------:|:--------- |
 | A0  | N/C     | In        | Analog In |
