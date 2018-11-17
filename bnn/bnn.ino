@@ -2,6 +2,35 @@
 *
 * Birdy Num Num: Temperature-calibrated, time-stampled, weight logging application
 *
+* Continuously monitors the (100g) Load Cell for significant (as defined by a
+* given threshold value) change in weight of the feeder, and then writes the
+* new weight, along with a timestamp and temperature reading, to a file on the
+* uSD card.
+* At each powerup, the uSD card's (FAT32) file system is read and if a config
+* file exists, the contents are used to overwrite the default values for the
+* application's variables.
+* After this initialization is done, this application creates a new log file
+* and gives it a name that includes the startup time.
+* An initial reading of the sensors is made and a log is written to the file.
+* This application will continue reading the Load Cell in a loop and compare
+* the weight against the last recorded value.  When the difference between
+* them exceeds a given amount, then a new log record is written and the last
+* weight value is updated.
+* Log records are of the form:
+*  <timestamp>, <temperature>, <loadCell value>
+* The timestamp is in ISO format.  The temperature is a float in degrees C.
+* The Load Cell value is the raw (uncompensated) value read from the HX711.
+* Log records contain raw values and all compensation and conversion (e.g.,
+* Load Cell temperature compensation) is done in post-processing.
+* The uSD file is flushed after each log record is written.  This way the
+* file is kept in a consistent state so the power can be removed at any time
+* without compromising the data log.
+*
+* TODO figure out how to close the file properly
+* TODO figure out how to have the RTC and uSD card share the SPI bus properly
+* TODO decide if ISO format is the right thing for timestamps or if it can be raw as well
+* TODO decide if raw temp readings are possible
+* TODO figure out if this file can be refactored into multiple files
 */
 
 
