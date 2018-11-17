@@ -82,6 +82,8 @@ should be fine.
 
 ### DS3234 Real-Time Clock
 
+Calls for a 1225 3V button cell battery (but a 1220 works, and I could find one at the hardware store).
+
 Pin assignments:
 
 | Signal | Pin | Library Default |  Notes   |
@@ -96,8 +98,9 @@ Pin assignments:
 
 ### One Wire Digital Temperature Sensor - DS18B20
 
-Looking at flat side, leads down, from left to right: GND, Data, VCC
-Data needs to be be pulled up to VCC with 4.7K ohm resistor
+Looking at flat side, leads down, from left to right: GND, Data, VCC.
+
+Data needs to be be pulled up to VCC with 4.7K ohm resistor.
 
 Pin assignments:
 
